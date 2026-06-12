@@ -1,0 +1,363 @@
+{
+  "manifestVersion": "3.2",
+  "proxies": [
+    {
+      "address": "0x486B0cbF094e4DD99FD32B35EC92406d0D48c038",
+      "txHash": "0x6994b4fb8e777e2b35a797038cdf49c7abb6ff7958db2ffbb295925ad2e671ae",
+      "kind": "uups"
+    },
+    {
+      "address": "0xF5592cA84a05EA9f510b70DA7916C7Cd6eC0698a",
+      "txHash": "0xf06c8828c0bfd879deff697743fe26fa9af0b6bd73a1723a9ca2fff6a072673c",
+      "kind": "uups"
+    }
+  ],
+  "impls": {
+    "8ff3a78d35355011aae4fcf0c1f8fb3834e9c38bcb382c342c381d0514e7c7db": {
+      "address": "0xcfaD9aEf574e01cf508d15C1F7F5B3119059D9C8",
+      "txHash": "0x3b3d4d4ae37969b1f151fa535a14d01ed6ad95708bab786cc26db788133460b9",
+      "layout": {
+        "solcVersion": "0.8.30",
+        "storage": [
+          {
+            "label": "name",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_string_storage",
+            "contract": "KOLFactory",
+            "src": "contracts/KOLFactory.sol:33"
+          },
+          {
+            "label": "version",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256",
+            "contract": "KOLFactory",
+            "src": "contracts/KOLFactory.sol:34"
+          },
+          {
+            "label": "isKOLWhitelisted",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "KOLFactory",
+            "src": "contracts/KOLFactory.sol:37"
+          },
+          {
+            "label": "isAdmin",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "KOLFactory",
+            "src": "contracts/KOLFactory.sol:38"
+          },
+          {
+            "label": "tokensAccepted",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "KOLFactory",
+            "src": "contracts/KOLFactory.sol:41"
+          },
+          {
+            "label": "whitelistedStrategies",
+            "offset": 0,
+            "slot": "5",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "KOLFactory",
+            "src": "contracts/KOLFactory.sol:42"
+          },
+          {
+            "label": "strategyIndex",
+            "offset": 0,
+            "slot": "6",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "KOLFactory",
+            "src": "contracts/KOLFactory.sol:43"
+          },
+          {
+            "label": "protocolsWhitelisted",
+            "offset": 0,
+            "slot": "7",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "KOLFactory",
+            "src": "contracts/KOLFactory.sol:46"
+          },
+          {
+            "label": "keeperImplementation",
+            "offset": 0,
+            "slot": "8",
+            "type": "t_contract(IKOLKeeper)2859",
+            "contract": "KOLFactory",
+            "src": "contracts/KOLFactory.sol:49"
+          },
+          {
+            "label": "deployedKeepers",
+            "offset": 0,
+            "slot": "9",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "KOLFactory",
+            "src": "contracts/KOLFactory.sol:50"
+          },
+          {
+            "label": "fundsManager",
+            "offset": 0,
+            "slot": "10",
+            "type": "t_address",
+            "contract": "KOLFactory",
+            "src": "contracts/KOLFactory.sol:53"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_struct(InitializableStorage)86_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(OwnableStorage)14_storage": {
+            "label": "struct OwnableUpgradeable.OwnableStorage",
+            "members": [
+              {
+                "label": "_owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]",
+            "numberOfBytes": "32"
+          },
+          "t_contract(IKOLKeeper)2859": {
+            "label": "contract IKOLKeeper",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.Ownable": [
+            {
+              "contract": "OwnableUpgradeable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:24",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    },
+    "7f3a2bff927bc43cdf3417a72385db3f9e931c4db96e54eea59873fcba19dd0c": {
+      "address": "0xb82f4c6783cC9d1Cdc19596AB163d2D3865d9E9D",
+      "txHash": "0x15591de96f2072a8804f4c63f52ad2c46b13a301667d98c9ed805c6888320cfe",
+      "layout": {
+        "solcVersion": "0.8.30",
+        "storage": [
+          {
+            "label": "name",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_string_storage",
+            "contract": "KOLFundsManager",
+            "src": "contracts/KOLFundsManager.sol:35"
+          },
+          {
+            "label": "version",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256",
+            "contract": "KOLFundsManager",
+            "src": "contracts/KOLFundsManager.sol:36"
+          },
+          {
+            "label": "kolKeeper",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_address",
+            "contract": "KOLFundsManager",
+            "src": "contracts/KOLFundsManager.sol:39"
+          },
+          {
+            "label": "kolFactory",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_contract(IKOLFactory)4834",
+            "contract": "KOLFundsManager",
+            "src": "contracts/KOLFundsManager.sol:42"
+          },
+          {
+            "label": "kollectiveFunds",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "contract": "KOLFundsManager",
+            "src": "contracts/KOLFundsManager.sol:45"
+          },
+          {
+            "label": "investedFunds",
+            "offset": 0,
+            "slot": "5",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "contract": "KOLFundsManager",
+            "src": "contracts/KOLFundsManager.sol:46"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_struct(InitializableStorage)86_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(OwnableStorage)14_storage": {
+            "label": "struct OwnableUpgradeable.OwnableStorage",
+            "members": [
+              {
+                "label": "_owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_contract(IKOLFactory)4834": {
+            "label": "contract IKOLFactory",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.Ownable": [
+            {
+              "contract": "OwnableUpgradeable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:24",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

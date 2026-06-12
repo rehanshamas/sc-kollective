@@ -1,0 +1,9 @@
+{
+  "network": "localhost",
+  "deployer": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+  "contract": "MUSDC",
+  "timestamp": "2025-08-13T06:34:28.424Z",
+  "version": "1.0.0",
+  "address": "0x9E545E3C0baAB3E08CdfD552C960A1050f373042",
+  "implementationAddress": "0x9E545E3C0baAB3E08CdfD552C960A1050f373042"
+}

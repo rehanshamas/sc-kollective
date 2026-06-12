@@ -1,0 +1,20 @@
+{
+  "network": "sepolia",
+  "deployer": "0x48f9d844364095B1B0B9429A18ec9B4fA5c6Af41",
+  "contracts": {
+    "KOLFactory": "0x486B0cbF094e4DD99FD32B35EC92406d0D48c038",
+    "KOLFundsManager": "0xF5592cA84a05EA9f510b70DA7916C7Cd6eC0698a"
+  },
+  "implementationAddresses": {
+    "DhedgeStrategy": "0x79783b881730e5cB5f4056410F9c678E2710723B",
+    "KOLKeeper": "0x50d299A16f409d600a36E665fa983DB3104Fc8D2",
+    "KOLFactory": "0xcfaD9aEf574e01cf508d15C1F7F5B3119059D9C8",
+    "KOLFundsManager": "0xb82f4c6783cC9d1Cdc19596AB163d2D3865d9E9D"
+  },
+  "adminAddresses": {
+    "KOLFactory": "0x0000000000000000000000000000000000000000",
+    "KOLFundsManager": "0x0000000000000000000000000000000000000000"
+  },
+  "timestamp": "2025-08-08T10:58:18.735Z",
+  "version": "1.0.0"
+}

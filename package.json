@@ -1,0 +1,54 @@
+{
+  "name": "sc-kollective",
+  "version": "1.0.0",
+  "description": "Smart Contract Kollective - A Hardhat-based Solidity development environment with upgradable kickstarter contracts",
+  "main": "index.js",
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=10.0.0"
+  },
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "test:gas": "REPORT_GAS=true hardhat test",
+    "node": "hardhat node",
+    "clean": "hardhat clean",
+    "coverage": "hardhat coverage",
+    "lint": "solhint 'contracts/**/*.sol'",
+    "lint:fix": "solhint 'contracts/**/*.sol' --fix",
+    "size": "hardhat size-contracts",
+    "deploy:sepolia": "hardhat run scripts/deploy.js --network sepolia",
+    "deploy:holesky": "hardhat run scripts/deploy.js --network holesky",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+    "deploy:musdc:sepolia": "hardhat run scripts/deploy-musdc.js --network sepolia",
+    "deploy:musdc:holesky": "hardhat run scripts/deploy-musdc.js --network holesky",
+    "deploy:musdc:local": "hardhat run scripts/deploy-musdc.js --network localhost",
+    "upgrade:sepolia": "hardhat run scripts/upgrade.js --network sepolia",
+    "upgrade:holesky": "hardhat run scripts/upgrade.js --network holesky",
+    "verify:sepolia": "hardhat run scripts/verify.js --network sepolia",
+    "verify:holesky": "hardhat run scripts/verify.js --network holesky"
+  },
+  "keywords": [
+    "solidity",
+    "hardhat",
+    "ethereum",
+    "smart-contracts",
+    "blockchain",
+    "upgradeable",
+    "kickstarter"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^6.1.0",
+    "@nomicfoundation/hardhat-verify": "^2.1.0",
+    "@openzeppelin/contracts": "^5.4.0",
+    "@openzeppelin/contracts-upgradeable": "^5.4.0",
+    "@openzeppelin/hardhat-upgrades": "^3.1.0",
+    "dotenv": "^17.2.1",
+    "hardhat": "^2.26.1",
+    "hardhat-contract-sizer": "^2.10.0",
+    "hardhat-gas-reporter": "^2.3.0",
+    "solhint": "^6.0.0"
+  }
+}

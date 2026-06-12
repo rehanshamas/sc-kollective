@@ -1,0 +1,9 @@
+{
+  "network": "sepolia",
+  "deployer": "0x48f9d844364095B1B0B9429A18ec9B4fA5c6Af41",
+  "contract": "MUSDC",
+  "timestamp": "2025-08-13T06:35:03.142Z",
+  "version": "1.0.0",
+  "address": "0x834e9365E59cea1B69cB2429026596Cc7d20F78a",
+  "implementationAddress": "0x834e9365E59cea1B69cB2429026596Cc7d20F78a"
+}
